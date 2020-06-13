@@ -5,9 +5,9 @@ input.onButtonPressed(Button.B, function () {
     millivolts = Math.round(pins.analogReadPin(AnalogPin.P0) * 3000 / 1023)
     basic.showNumber(millivolts)
     if (millivolts < 1200) {
-        basic.showIcon(IconNames.Sad)
+        basic.showIcon(IconNames.No)
     } else {
-        basic.showIcon(IconNames.Happy)
+        basic.showIcon(IconNames.Yes)
     }
 })
 let millivolts = 0
