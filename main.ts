@@ -6,7 +6,7 @@ input.onButtonPressed(Button.B, function () {
     basic.showNumber(millivolts)
     if (millivolts < 1200) {
         basic.showIcon(IconNames.No)
-    } else {
+    } else if (millivolts > 1200) {
         basic.showIcon(IconNames.Yes)
     }
 })
